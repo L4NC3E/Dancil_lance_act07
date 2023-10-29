@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Activity 7</title>
+
+</head>
+	
+<body>
+
+	<section class="hero">
+		<div class="main-width">
+			<header>
+				<div class="logo">
+					<button ondblclick="buttonClick()"><i class="fa-solid fa-mug-hot"></i></button>
+				</div>
+			<nav>
+				<div class="hamb">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+
+				<ul class="nav-list">
+					<li><a href="#">Home</a></li>
+					<button onmouseover="buttonClick2()"><li><a href="#">Member</a></li></button>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Category</a></li>
+					<select id="category" onmouseover="changeBorderColor()" onmouseleave="changeBorderColorBlack()" class="form-control">
+						<option></option>
+						<option> Online Order </option>
+						<option> Drive Through </option>
+						<option> Through Shop</option>
+					</select>
+					<li class='btn'><a href="#">Contact us</a></li>
+
+				</ul>
+
+			</nav>
+			</header>
+
+			<div class="container">
+				<div class="hero-text">
+					<h3>Welcome!</h3>
+					<h1>TO <span>Our Coffee Shop</span></h1>
+					<p>The history of coffee dates back to centuries of old oral tradition in modern day Ethiopia. However, neither where coffee was first cultivated nor direct evidence of its consumption prior to the 15th century have been found. Sufi monasteries in Yemen employed coffee as an aid to concentration during prayers.</p>
+					<div class="social">
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+						<a href="#"><i class="fa-brands fa-twitch"></i></a>
+					</div>
+					<button type="button">More About Us</button>
+				</div>
+				<div class="bottom">
+					<p>@ 2022 G2 - All Rights Reserved.</p>
+					<a href="https://www.w3schools.com/default.asp">W3school website CLICK here!</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/script.js"></script>
+	<script>
+		
+		function changeBorderColor(){
+			document.getElementById('category').style.borderColor = 'red'
+		}
+		function changeBorderColorBlack(){
+			document.getElementById('category').style.borderColor = '#2ecc71'
+		}
+		function buttonClick(){
+			alert('Coffee Lover yarn >.<')
+		}
+		function buttonClick2(){
+			alert("Lance Wiliiam Dancil")
+		}
+	</script>
+
+
+</body>
+</html>
